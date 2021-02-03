@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+<head>
+	<meta charset = "utf-8" />
+	<title> Electronics-Center </title>
+	<link rel ="stylesheet" href ="lab1-Part1-Team#.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+
+			$("#fadeInBtn1").change(function()
+			{
+  				$("#img1").fadeIn();
+			});
+			$("#fadeOutBtn1").change(function()
+			{
+  				$("#img1").fadeOut();
+			});
+			$("#fadeInBtn2").change(function()
+			{
+  				$("#img2").fadeIn();
+			});
+			$("#fadeOutBtn2").change(function()
+			{
+  				$("#img2").fadeOut();
+			});
+			$("#fadeInBtn3").change(function()
+			{
+  				$("#img3").fadeIn();
+			});
+			$("#fadeOutBtn3").change(function()
+			{
+  				$("#img3").fadeOut();
+			});
+
+
+
+
+			$("#fadeInInfoBtn1").change(function()
+			{
+  				$("[id=info1]").fadeIn();
+			});
+			$("#fadeOutInfoBtn1").change(function()
+			{
+  				$("[id=info1]").fadeOut();
+			});
+			$("#fadeInInfoBtn2").change(function()
+			{
+  				$("[id=info2]").fadeIn();
+			});
+			$("#fadeOutInfoBtn2").change(function()
+			{
+  				$("[id=info2]").fadeOut();
+			});
+			$("#fadeInInfoBtn3").change(function()
+			{
+  				$("[id=info3]").fadeIn();
+			});
+			$("#fadeOutInfoBtn3").change(function()
+			{
+  				$("[id=info3]").fadeOut();
+			});
+			
+			$("#Btn").click(function(){
+    				$("#greenBox").animate({
+      				left: '250px',
+     				opacity: '0.5',
+      				height: '150px',
+      				width: '150px'
+    				});
+  			});
+			
+		});
+		
+	</script>
+	
+</head>
+<body>
+
+<h1> Electronics Centre </h1>
+
+<label for="search"> Search: </label>
+<input type="text" name="search"><br><br>
+
+<label for="actions"> Choose an action: </label>
+<select name = "actions">
+	<option value = "0"> Archive </option>
+	<option value = "1"> Edit </option>
+	<option value = "2"> Delete </option>
+	<option value = "3"> Collection </option>
+<select>
+
+<label for="types"> Choose a device: </label>
+<select name = "types">
+	<option value = "0"> Laptop </option>
+	<option value = "1"> Notebook </option>
+	<option value = "2"> Tablet </option>
+	<option value = "3"> Cellphone </option>
+<select>
+
+<table>
+	<caption> Electronic Devices</caption>
+	<tr>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th>Name</th>
+		<th>Company</th>
+		<th>Year</th>
+		<th>Type</th>
+		<th>Actions</th>
+	</tr>
+	<tr>
+			<td>
+				<input type="radio" id="fadeInBtn1" name="fade1" value="fadeIn"> Fade In <br>
+				<input type="radio" id="fadeOutBtn1" name="fade1" value="fadeOut"> Fade Out <br>
+			</td>
+			<td><img src ="images/iphone.jpg" alt="IPhone" id="img1" width="150" height="150"/></td>
+			<td>
+				<input type="radio" id="fadeInInfoBtn1" name="fade4" value="fadeIn">  Fade In <br>
+				<input type="radio" id="fadeOutInfoBtn1" name="fade4" value="fadeOut">  Fade Out <br>
+			</td>
+
+		
+			<td id="info1">iPhone 12</td>
+			<td id="info1">Apple</td>
+			<td id="info1">2020</td>
+			<td id="info1">Cellphone</td>
+			<td id="info1">
+				<button type="submit">
+					<img src="images/edit.png" alt="edit button" width="25" height="25" />
+				</button>
+				<button type="submit">
+					<img src="images/delete.png" alt="delete button" width="25" height="25" />
+				</button>
+				<button type="submit">
+					<img src="images/collection.png" alt="collection button" width="25" height="25" />
+				</button>
+				<button type="submit">
+					<img src="images/archive.png" alt="archive button" width="25" height="25" />
+				</button>
+			</td>
+		
+		
+	</tr>
+	<tr>
+			<td>
+				<input type="radio" id="fadeInBtn2" name="fade2" value="fadeIn"> Fade In <br>
+				<input type="radio" id="fadeOutBtn2" name="fade2" value="fadeOut"> Fade Out <br>
+			</td>
+			<td><img src ="images/ipad.jpg" alt="IPad" id="img2" width="150" height="150"/></td>
+			<td>
+				<input type="radio" id="fadeInInfoBtn2" name="fade5" value="fadeIn">  Fade In <br>
+				<input type="radio" id="fadeOutInfoBtn2" name="fade5" value="fadeOut">  Fade Out <br>
+			</td>
+
+		
+		
+			<td id="info2">iPad Pro</td>
+			<td id="info2">Apple</td>
+			<td id="info2">2020</td>
+			<td id="info2">Tablet</td>
+			<td id="info2">
+				<button type="submit">
+					<img src="images/edit.png" alt="edit button" width="25" height="25" />
+				</button>
+				<button type="submit">
+					<img src="images/delete.png" alt="delete button" width="25" height="25" />
+				</button>
+				<button type="submit">
+					<img src="images/collection.png" alt="collection button" width="25" height="25" />
+				</button>
+				<button type="submit">
+					<img src="images/archive.png" alt="archive button" width="25" height="25" />
+				</button>
+			</td>
+		
+		
+	</tr>
+	<tr>
+			<td>
+				<input type="radio" id="fadeInBtn3" name="fade3" value="fadeIn"> Fade In <br>
+				<input type="radio" id="fadeOutBtn3" name="fade3" value="fadeOut"> Fade Out <br>
+			</td>
+			<td><img src ="images/xps15.jpg" alt="xps15" id="img3" width="150" height="150"/></td>
+			<td>
+				<input type="radio" id="fadeInInfoBtn3" name="fade6" value="fadeIn">  Fade In <br>
+				<input type="radio" id="fadeOutInfoBtn3" name="fade6" value="fadeOut">  Fade Out <br>
+			</td>
+		
+	
+			<td id="info3">XPS 15</td>
+			<td id="info3">Dell</td>
+			<td id="info3">2020</td>
+			<td id="info3">Laptop</td>
+			<td id="info3">
+				<button type="submit">
+					<img src="images/edit.png" alt="edit button" width="25" height="25" />
+				</button>
+				<button type="submit">
+					<img src="images/delete.png" alt="delete button" width="25" height="25" />
+				</button>
+				<button type="submit">
+					<img src="images/collection.png" alt="collection button" width="25" height="25" />
+				</button>
+				<button type="submit">
+					<img src="images/archive.png" alt="archive button" width="25" height="25" />
+				</button>
+			</td>
+		
+		
+	</tr>
+</table>
+
+<button id="Btn">Start Animation</button>
+<div id = "greenBox" style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
+
+
+
+</body>
+</html>

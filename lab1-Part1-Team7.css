@@ -1,0 +1,12 @@
+.h1, h1{
+text-align: center;	
+}
+
+.vertical{
+  display: flex;
+  align-items: center;
+}
+
+td, th {
+  padding: 20px !important;
+}
